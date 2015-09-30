@@ -1,2 +1,0 @@
-x = getch()
-print x
