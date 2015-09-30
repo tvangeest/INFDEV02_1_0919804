@@ -1,0 +1,2 @@
+x = getch()
+print x
