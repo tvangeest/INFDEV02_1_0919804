@@ -8,4 +8,4 @@ for c in word:
     c = c + n
     c = chr(c)
     sys.stdout.write(c) # print without enter
-print "" # print empty line
+sys.stdout.write("\n")
