@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Not true", "Not true\Not true.pyproj", "{C642254B-5681-460C-947F-96F8DEA0F071}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PyTurtule", "Test1\PyTurtule.pyproj", "{76307864-DE33-41DA-93B1-0A22E4AD4D32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,8 +11,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C642254B-5681-460C-947F-96F8DEA0F071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C642254B-5681-460C-947F-96F8DEA0F071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76307864-DE33-41DA-93B1-0A22E4AD4D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76307864-DE33-41DA-93B1-0A22E4AD4D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
