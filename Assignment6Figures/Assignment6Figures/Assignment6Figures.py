@@ -1,6 +1,6 @@
 ﻿import sys
 done = ""
-figure = raw_input("square1, square2, triangle1, triangle2: ").lower()
+figure = raw_input("square1, square2, triangle1, triangle2?: ").lower()
 if figure == "square1":
     length = int(raw_input("What is the length of the square?: "))
     width = int(raw_input("What is the width of the square?: "))
@@ -24,14 +24,14 @@ elif figure == "square2":
         done += "*"
     sys.stdout.write(done + "\n")
 elif figure == "triangle1":
-    length = int(raw_input("What is the length of the triangle?"))
+    length = int(raw_input("What is the length of the triangle?: "))
     for i in range(length):
         for j in range(i+1):
             done += "*"
         done += "\n"
     sys.stdout.write(done)
 elif figure == "triangle2":
-    length = int(raw_input("What is the length of the triangle?"))
+    length = int(raw_input("What is the length of the triangle?: "))
     for i in range(length):
         for j in range(length, i+1, -1):
             done += " "
