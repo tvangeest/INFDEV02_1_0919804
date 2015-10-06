@@ -30,4 +30,15 @@ elif figure == "triangle1":
             done += "*"
         done += "\n"
     sys.stdout.write(done)
+elif figure == "triangle2":
+    length = int(raw_input("What is the length of the triangle?"))
+    for i in range(length):
+        for j in range(length, i+1, -1):
+            done += " "
+        for k in range(i+1):
+            done += "*"
+        for l in range(i):
+            done += "*"
+        done += "\n"
+    sys.stdout.write(done)
 
