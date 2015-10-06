@@ -1,8 +1,10 @@
 ﻿import sys
 print "Make some figures!"
-x = "*"
+x = ""
+full = ""
+emptyLine = ""
+emptyRows = ""
 space = " "
-w = 1
 finished = ""
 figure = raw_input("square, triangle, circle or smiley?: ").lower()
 if figure == "square":
@@ -10,25 +12,33 @@ if figure == "square":
     if squareType == "1":
         width = int(raw_input("How long do you want your figure(width): "))
         height = int(raw_input("How many lines do you want your figure(height): "))
-        while w != width:
+        for i in range(0, width):
             x = x + "*"
-            w = w + 1
-        for z in range(0, height):
+        for i in range(0, height):
             finished = finished + x + "\n"
-            z = z + 1
         sys.stdout.write(finished)
     elif squareType == "2":
         width = int(raw_input("How long do you want your figure(width): "))
-        height = int(raw_input("How many lines do you want your figure(height): "))
-        print x
+        x = x + "*"
+        for i in range(0, width):
+            full = full + "*"
+        for i in range(1, (width-2)):
+            space = space + " "
+        emptyLine = ( emptyLine + x + space + x + "\n")
+        for i in range(1, (width-1)):
+            emptyRows = emptyRows + emptyLine
+        finished = (full + "\n" + emptyRows + full + "\n")
+        sys.stdout.write(finished)
 elif figure == "triangle":
     triangleType = raw_input("What kind of triangle? 1 or 2?: ")
     if triangleType == "1":
         height = int(raw_input("How many lines do you want your figure(height): "))
-        for z in range(0, height):
-            print x
+        for i in range(0, height):
             x = x + "*"
-            z = z + 1
+            finished = finished + x +"\n"
+        sys.stdout.write(finished)
+    elif triangleType == "2":
+        height = int(raw_input("How many lines do you want your figure(height): "))
 elif figure == "circle":
     print "( )"
 elif figure == "smiley":
