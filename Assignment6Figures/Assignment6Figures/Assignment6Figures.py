@@ -41,4 +41,6 @@ elif figure == "triangle2":
             done += "*"
         done += "\n"
     sys.stdout.write(done)
+else:
+    sys.stdout.write("Invalid input\n")
 
