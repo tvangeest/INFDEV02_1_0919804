@@ -15,4 +15,4 @@ while repeat == "yes":
         print "This password is very strong!"
         repeat = "no"
     else:
-        print "This password is medium strength, please try again."/
+        print "This password is medium strength, please try again."
